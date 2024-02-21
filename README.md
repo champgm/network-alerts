@@ -1,13 +1,11 @@
 # network-alerts
 
-## Cheatsheet:
-
-```
-Activate under windows:
-  env\Scripts\activate
-
-Update dependency requirements:
-  pip freeze > requirements.txt
+## Setup
+* Use chocolatey to install python
+* Make a virtual environment: `python -m venv env`
+* Activate in windows: `.\env\Scripts\activate`
+* Install dependency requirements: `pip install -r requirements.txt`
+* Update dependency requirements: `pip freeze > requirements.txt`
 
 ```
 
@@ -48,6 +46,8 @@ Given the requirements and the environment (Windows, network monitoring, email n
   * Network Monitoring: socket library
   * Logging: logging library
   * Notification System: smtplib (nah, gonna stick with known googleapis workflow)
-* Logic: Loop, check, alert
+* Logic: Loop, check, alert, continue
 
-Yeah, that sounds about right. Thanks GPT.
+### Result
+
+Yeah, no surprises there. Thanks GPT.

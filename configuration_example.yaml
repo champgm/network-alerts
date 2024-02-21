@@ -1,0 +1,19 @@
+monitoring:
+  target_ip: "192.168.1.100"
+  check_interval: 60
+  failures_allowed: 2 # Number of failed checks before alerting
+
+logging:
+  file_path: "logs/monitor.log"
+  level: "INFO"
+
+email:
+  google_token:
+    grant_type: "refresh_token"
+    refresh_token: "secret"
+    client_id: "secret"
+    client_secret: "secret"
+  sender: sender@gmail.com
+  recipients:
+    - recipient1@gmail.com
+    - recipient2@gmail.com
