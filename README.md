@@ -7,8 +7,6 @@
 * Install dependency requirements: `pip install -r requirements.txt`
 * Update dependency requirements: `pip freeze > requirements.txt`
 
-```
-
 # Design 
 
 ### Let's let GPT pick the language...
