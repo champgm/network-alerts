@@ -1,3 +1,4 @@
+from pathlib import Path
 from pydantic import BaseModel
 from typing import List
 import yaml
@@ -33,7 +34,9 @@ class Config(BaseModel):
     email: EmailConfig
 
 
-def get_config(config_path: str) -> Config:
-    with open(config_path, 'r') as file:
+def get_config() -> Config:
+    current_file_directory = Path(__file__).parent
+    config_path = current_file_directory / "../configuration.yaml"
+    with open(config_path, "r") as file:
         data = yaml.safe_load(file)
         return Config(**data)
